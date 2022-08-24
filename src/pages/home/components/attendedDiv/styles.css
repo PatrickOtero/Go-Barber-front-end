@@ -1,0 +1,114 @@
+.bigger-div {
+    position: absolute;
+  
+    height: 11.2rem;
+    width: 64rem;
+    border-radius: 1rem;
+  
+    background-color: #1c1c1fd2;
+  
+    z-index: 1;
+  }
+
+  .attendance-div-container .bigger-message {
+     position: absolute;
+
+     color: orange;
+
+     margin-top: 3.4rem;
+     margin-left: 23rem;
+
+     z-index: 2;
+
+     font-size: 3rem;
+  }
+
+  .smaller-div {
+    position: absolute;
+  
+    height: 8.8rem;
+    width: 54.4rem;
+    border-radius: 1rem;
+  
+    background-color: #1c1c1fd2;
+  
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+  }
+
+  .smaller-message {
+    position: absolute;
+
+    left: 35%;
+    top: 30%;
+
+    color: orange;
+
+    z-index: 2;
+
+    font-size: 2.5rem;
+  }
+
+  .smallest-div {
+    position: absolute;
+  
+    height: 7.2rem;
+    width: 44rem;
+    border-radius: 1rem;
+  
+    background-color: #1c1c1fd2;
+  
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+  }
+
+  .smallest-message {
+    position: absolute;
+
+    left: 5%;
+    top: 2rem;
+
+    color: orange;
+
+    z-index: 2;
+
+    font-size: 2.5rem;
+  }
+
+  .see-reason-button {
+    position: absolute;
+
+    left: 60%;
+    top: 0.8rem;
+
+    z-index: 2;
+
+    height: 5.6rem;
+    width: 15rem;
+    border-radius: 1rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #4e4b57;
+  
+    color: white;
+  
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+  
+    font-family: 'Roboto Slab', sans-serif;
+  
+    transition: 400ms;
+  }
+
+  .see-reason-button:hover {
+    background-color: orange;
+    color: black;
+  }

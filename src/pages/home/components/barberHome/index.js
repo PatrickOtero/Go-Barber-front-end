@@ -8,6 +8,8 @@ import useReserveContext from '../../../../hooks/reserves/useReserveContext'
 import CancelModal from './components/cancelModal'
 import CancelDiv from '../cancelDiv'
 import { apiAuth } from "../../../../services/axios";
+import AttendanceDiv from '../attendedDiv'
+import AttendedDiv from '../attendedDiv'
 
 const BarberHome = () => {
   const [date] = useState(new Date().getDate())
@@ -133,10 +135,11 @@ const BarberHome = () => {
                     <div className="attendance-main secondary">
                       {appointmentId === attendance.id && cancelModal && <CancelModal cancelReason={cancelReason} setCancelReason={setCancelReason}/>}
                     {attendance.canceled && <CancelDiv type="smaller-div" messageSize="smaller-message" setReasonModal={setReasonModal}/>}
+                    {!attendance.canceled && new Date(attendance.reserve_date) < new Date() && <AttendedDiv type="smaller-div" messageSize="smaller-message"/>}
                       <img src={userIcon} alt="foto do cliente" />
                       <b>{attendance.customer_name}</b>
                     </div>
-                    { (appointmentId !== attendance.id || !cancelModal) && <button disabled={attendance.canceled}className="options-button" onClick={() => {
+                    { (appointmentId !== attendance.id || !cancelModal) && <button disabled={attendance.canceled || new Date(attendance.reserve_date) < new Date()}className="options-button" onClick={() => {
                       setCancelModal(true)
                       setAppointmentId(attendance.id);
                       }}type='button'>Cancelar Agendamento</button>}
@@ -176,10 +179,11 @@ const BarberHome = () => {
                     <div className="attendance-main secondary">
                         {appointmentId === attendance.id && cancelModal && <CancelModal cancelReason={cancelReason} setCancelReason={setCancelReason}/>}
                        {attendance.canceled && <CancelDiv type="smaller-div" messageSize="smaller-message" setReasonModal={setReasonModal}/>}
+                       {!attendance.canceled && new Date(attendance.reserve_date) < new Date() && <AttendedDiv type="smaller-div" messageSize="smaller-message"/>}
                       <img src={userIcon} alt="foto do cliente" />
                       <b>{attendance.customer_name}</b>
                     </div>
-                    { (appointmentId !== attendance.id || !cancelModal) && <button disabled={attendance.canceled}className="options-button" onClick={() => {
+                    { (appointmentId !== attendance.id || !cancelModal) && <button disabled={attendance.canceled || new Date(attendance.reserve_date) < new Date()}className="options-button" onClick={() => {
                       setCancelModal(true)
                       setAppointmentId(attendance.id);
                       }}type='button'>Cancelar Agendamento</button>}
@@ -221,10 +225,11 @@ const BarberHome = () => {
                     }} className="attendance-main secondary">
                        {appointmentId === attendance.id && cancelModal && <CancelModal cancelReason={cancelReason} setCancelReason={setCancelReason}/>}
                       {attendance.canceled && <CancelDiv type="smaller-div" messageSize="smaller-message" setReasonModal={setReasonModal}/>}
+                      {!attendance.canceled && new Date(attendance.reserve_date) < new Date() && <AttendedDiv type="smaller-div" messageSize="smaller-message"/>}
                       <img src={userIcon} alt="foto do cliente" />
                       <b>{attendance.customer_name}</b>
                     </div>
-                    { (appointmentId !== attendance.id || !cancelModal) && <button disabled={attendance.canceled}className="options-button" onClick={() => {
+                    { (appointmentId !== attendance.id || !cancelModal) && <button disabled={attendance.canceled || new Date(attendance.reserve_date) < new Date()}className="options-button" onClick={() => {
                       setCancelModal(true)
                       setAppointmentId(attendance.id);
                       }}type='button'>Cancelar Agendamento</button>}
