@@ -1,0 +1,76 @@
+.rdp {
+  background-color: #28262e;
+
+  border-radius: 1rem;
+  font-family: 'Roboto Slab', sans-serif;
+
+  --rdp-cell-size: 6rem;
+}
+
+.rdp-button {
+  margin: 0.3rem;
+  color: gray;
+}
+
+.rdp-caption {
+  display: flex;
+  background-color: #3e3b47;
+
+  justify-content: center;
+
+  border-radius: 1rem 1rem 0 0;
+}
+
+.rdp-months {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+
+  color: #666360;
+}
+
+.rdp-caption_label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+
+  color: white;
+}
+
+.rdp-day {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+
+  color: #666360;
+}
+
+.available {
+  background: #6754a0;
+  border-radius: 10px;
+}
+
+.rdp-nav::before {
+  position: relative;
+  content: '';
+  /* width: 100%; */
+  height: 50px;
+  position: absolute;
+  background: #3e3b47;
+  border-radius: 10px 10px 0 0;
+  z-index: -1;
+}
+
+.rdp-nav_button {
+  color: #999591 !important;
+  margin-top: 0;
+  top: 0;
+}
+
+.rdp-selected {
+  background-color: red;
+}
+
+.biggerCalendar {
+  --rdp-cell-size: 8rem;
+}

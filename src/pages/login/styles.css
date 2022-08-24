@@ -1,0 +1,195 @@
+@keyframes loginSlideToRight {
+  0% {
+    opacity: 0;
+    margin-left: -40rem;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes loginGreaterSlideToRight {
+  0% {
+    opacity: 0;
+    margin-left: -80rem;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+.LoginPage {
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.LoginPage main {
+  display: flex;
+}
+
+.LoginPage section {
+  width: 50%;
+  min-height: 100vh;
+}
+
+.LoginPage .background-side {
+  min-height: 100vh;
+}
+
+.LoginPage .login-logo {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.LoginPage .login-side {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #312e38;
+
+  padding: 8rem;
+}
+
+.LoginPage form {
+  animation: loginGreaterSlideToRight 1200ms;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.LoginPage .login-side input {
+  height: 5.6rem;
+  width: 34rem;
+  border-radius: 1rem;
+
+  margin-bottom: 0.8rem;
+  padding-left: 5.8rem;
+
+  background-color: #232129;
+  color: gray;
+
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.LoginPage .login-input {
+  position: relative;
+}
+
+.LoginPage .login-input img {
+  position: absolute;
+
+  margin-left: 1.8rem;
+  bottom: 2.7rem;
+}
+
+.LoginPage .login-side-main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPage .login-side-main h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+
+  color: white;
+
+  margin-top: 8rem;
+  margin-bottom: 2.4rem;
+}
+
+.LoginPage .login-side-main button {
+  height: 5.6rem;
+  width: 34rem;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #232129;
+
+  color: white;
+
+  margin: 2.4rem 0;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+
+  font-family: 'Roboto Slab', sans-serif;
+
+  transition: 400ms;
+}
+
+.LoginPage .login-side-main button:hover {
+  background-color: orange;
+  color: #312e38;
+}
+
+.LoginPage .create-account-link {
+  display: flex;
+
+  margin-right: 17rem;
+  gap: 1.85rem;
+}
+
+.LoginPage .create-account-link a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+
+  color: orange;
+
+  transition: 400ms;
+}
+
+.LoginPage .create-account-link a:hover {
+  color: white;
+}
+
+.LoginPage .login-errors {
+  position: absolute;
+  top: 28rem;
+
+  animation: loginSlideToRight 800ms;
+  transition: 400ms;
+}
+
+.LoginPage .login-errors:hover {
+  color: orange;
+  cursor: default;
+}
+
+.forgot-password {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+
+  color: white;
+  cursor: pointer;
+
+  margin-bottom: 8rem;
+
+  transition: 400ms;
+}
+
+.forgot-password:hover {
+  color: orange;
+}

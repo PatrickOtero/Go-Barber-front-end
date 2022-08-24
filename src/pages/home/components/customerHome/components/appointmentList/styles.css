@@ -1,0 +1,179 @@
+.AppointmentList {
+    display: flex;
+    flex-direction: column;
+  
+    width: 75rem;
+    height: 50rem;
+  
+    border-radius: 2rem;
+    background-color: #28262e;
+    border: 3px solid orange;
+  
+    overflow: auto;
+  
+    padding: 4rem;
+  }
+
+  .AppointmentList .customer-reserveList-empty {
+    color: black;
+
+    transition: 400ms;
+  }
+
+  .AppointmentList .customer-reserveList-empty:hover {
+    color: orange;
+
+    cursor: default
+  }
+  
+  .AppointmentList::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  .AppointmentList::-webkit-scrollbar-track {
+    color: white;
+  
+    margin-right: 1rem;
+  }
+  
+  .AppointmentList::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: rgb(206, 137, 8);
+  }
+  
+  .AppointmentList::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(230, 188, 112);
+  }
+  
+  .AppointmentList .reserve-list-border {
+    position: absolute;
+  
+    left: 0;
+    top: 1.6rem;
+  
+    width: 1rem;
+    height: 4.2rem;
+    border-left: 0.3rem solid orange;
+  }
+  
+  .AppointmentList .reserve-list-container {
+    display: flex;
+  
+    margin-bottom: 1.8rem;
+  }
+  
+  .AppointmentList .reserve-list-main {
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+  
+    height: 7.2rem;
+    width: 44rem;
+    border-radius: 1rem;
+  
+    background-color: #3e3b47;
+  
+    text-align: start;
+  
+    padding: 1.6rem 2.2rem;
+  
+    transition: 400ms;
+  }
+  
+  .AppointmentList .reserve-list-main:hover {
+    background-color: #5a5661;
+  
+    cursor: default;
+  }
+  
+  .AppointmentList .reserve-list-container b {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  
+    color: white;
+  
+    margin-left: 2.4rem;
+  }
+  
+  .AppointmentList .reserve-list-date {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .AppointmentList .reserve-list-date span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+  
+    color: orange;
+  
+    margin-left: 1.2rem;
+  }
+  
+  .AppointmentList .reserve-list-main > img {
+    width: 6rem;
+  }
+  
+  .reserve-list-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reserve-list-date-container {
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+  }
+
+  .reserve-and-button-container {
+    display: flex;
+
+    /* gap: 7rem; */
+  }
+
+  .reserve-list-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 7.2rem;
+    width: 11rem;
+
+    background-color: #232129;
+
+    font-family: 'Roboto Slab', sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+  
+  
+    transition: 400ms;
+  }
+
+  .delete {
+    margin-left: 2rem;
+
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  .edit {
+    margin: 0;
+
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  .reserve-list-button.edit:disabled {
+    background-color: rgb(84, 88, 90);
+    color: #312e38;
+    cursor: not-allowed;
+  }
+
+  .reserve-and-button-container button:hover {
+    background-color: orange;
+    color: black;
+
+    cursor: pointer;
+  }

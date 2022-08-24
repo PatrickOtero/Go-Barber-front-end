@@ -1,0 +1,117 @@
+.BarbersList {
+  display: flex;
+  flex-direction: column;
+
+  width: 72rem;
+  height: 50rem;
+
+  border-radius: 2rem;
+  background-color: #28262e;
+  border: 3px solid orange;
+
+  overflow: auto;
+
+  padding: 4rem;
+}
+
+.BarbersList::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.BarbersList::-webkit-scrollbar-track {
+  color: white;
+
+  margin-right: 1rem;
+}
+
+.BarbersList::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: rgb(206, 137, 8);
+}
+
+.BarbersList::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(230, 188, 112);
+}
+
+.BarbersList .barber-list-border {
+  position: absolute;
+
+  left: 0;
+  top: 1.6rem;
+
+  width: 1rem;
+  height: 8.2rem;
+  border-left: 0.3rem solid orange;
+}
+
+.BarbersList .barber-list-container {
+  display: flex;
+
+  margin-bottom: 1.8rem;
+}
+
+.BarbersList .barber-list-main {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  height: 11.2rem;
+  width: 64rem;
+  border-radius: 1rem;
+
+  background-color: #3e3b47;
+
+  text-align: start;
+
+  padding: 1.6rem 2.2rem;
+
+  transition: 400ms;
+}
+
+.BarbersList .barber-list-main:hover {
+  background-color: #5a5661;
+
+  cursor: pointer;
+}
+
+.BarbersList .barber-list-container b {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+
+  color: white;
+
+  margin-left: 2.4rem;
+}
+
+.BarbersList .barber-list-date {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.BarbersList .barber-list-date span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+
+  color: gray;
+
+  margin-left: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.BarbersList .barber-list-main > img {
+  width: 8rem;
+}
+
+.barber-list-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.barber-list-date-container {
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+}

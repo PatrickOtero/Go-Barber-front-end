@@ -1,0 +1,14 @@
+.HomePage {
+  width: 100%;
+  height: 100%;
+}
+
+/* .home-main-container {
+  overflow: hidden;
+} */
+
+.HomePage header {
+  background-color: #28262e;
+
+  max-height: 14rem;
+}

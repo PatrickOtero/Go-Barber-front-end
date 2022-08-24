@@ -1,0 +1,72 @@
+  .cancel-reserve-modal {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+  
+    background-color: #28262e;
+  
+    width: 55rem;
+    height: 9rem;
+    padding: 0.5rem;
+
+    top: 0;
+    left: 0;
+    z-index: 2;
+  
+    border-radius: 1rem;
+  
+    gap: 5rem;
+  
+    animation: customerHomeSlideToRight 600ms
+  }
+
+  textarea {
+    height: 20rem;
+    padding: 1.5rem;
+
+    border-radius: 2rem;
+
+    font-size: 1.7rem;
+  }
+  
+  .cancel-reserve-modal b {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.1rem;
+    color: white;
+  }
+  
+  .cancel-reserve-modal-buttons {
+    display: flex;
+    justify-content: center;
+  
+    gap: 3rem;
+  }
+
+  .cancel-modal-container button {
+    height: 5.6rem;
+    width: 34rem;
+    border-radius: 1rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #232129;
+  
+    color: white;
+  
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+  
+    font-family: 'Roboto Slab', sans-serif;
+  
+    transition: 400ms;
+  }
+
+  .cancel-modal-container button:hover {
+    background-color: orange;
+    color: #312e38;
+  }

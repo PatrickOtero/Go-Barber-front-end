@@ -1,0 +1,82 @@
+.reason-modal-container {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.644);
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 3;
+}
+  
+  .reason-reserve-modal {
+    display: flex;
+    flex-direction: column;
+  
+    background-color: #28262e;
+  
+    width: 60rem;
+    height: 40rem;
+    padding: 3rem;
+    margin-top: 25rem;
+    border-radius: 4rem;
+  
+    animation: customerHomeSlideToRight 600ms
+  }
+  
+  .reasonTitle {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.1rem;
+    color: white;
+  }
+
+  .reason-buttons-container {
+    display: flex;
+
+    gap: 2rem;
+  }
+
+  .reason-modal-button {
+    height: 5.6rem;
+    width: 25rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #232129;
+  
+    color: white;
+  
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+  
+    font-family: 'Roboto Slab', sans-serif;
+  
+    transition: 400ms;
+  }
+
+  .reason-modal-container button:hover {
+    background-color: orange;
+    color: #312e38;
+  }
+
+  .reason-container {
+    margin-top: 2rem;
+
+    height: 20rem;
+    max-height: 30rem;
+  }
+
+  .reasonContent {
+    font-size: 2rem;
+  }

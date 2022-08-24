@@ -1,0 +1,231 @@
+@keyframes slideToLeft {
+  0% {
+    margin-right: -40rem;
+    opacity: 0;
+  }
+
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideErrorToLeft {
+  0% {
+    margin-right: -40rem;
+    opacity: 0;
+  }
+
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+.RegisterPage {
+  min-width: 100%;
+  min-height: 100%;
+
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.RegisterPage main {
+  display: flex;
+}
+
+.RegisterPage section {
+  width: 50%;
+  min-height: 100vh;
+}
+
+.RegisterPage .background-side {
+  min-height: 100vh;
+}
+
+.RegisterPage .register-background {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.RegisterPage .register-side {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #312e38;
+
+  padding: 8rem;
+}
+
+.RegisterPage form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  animation: slideToLeft 1200ms;
+}
+
+.user-type-container {
+  display: flex;
+
+  gap: 2.4rem;
+
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+.user-type-container b {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 400ms;
+}
+
+.user-type-container b:hover {
+  color: orange;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.8rem;
+}
+
+.RegisterPage .register-side input {
+  height: 5.6rem;
+  width: 34rem;
+  border-radius: 1rem;
+
+  margin-bottom: 0.8rem;
+  padding-left: 5.8rem;
+
+  background-color: #232129;
+  color: gray;
+
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.RegisterPage .register-input {
+  position: relative;
+}
+
+.RegisterPage .register-input img {
+  position: absolute;
+
+  margin-left: 1.8rem;
+  bottom: 2.7rem;
+}
+
+.RegisterPage .register-side-main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.RegisterPage .register-side-main h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+
+  color: white;
+
+  margin-top: 8rem;
+  margin-bottom: 2.4rem;
+}
+
+.RegisterPage .register-side-main a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+
+  color: white;
+
+  margin-top: 8rem;
+}
+
+.RegisterPage .register-side-main button {
+  height: 5.6rem;
+  width: 34rem;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #232129;
+
+  color: white;
+
+  margin: 2.4rem 0;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+
+  font-family: 'Roboto Slab', sans-serif;
+
+  transition: 400ms;
+}
+
+.RegisterPage .register-side-main button:hover {
+  background-color: orange;
+  color: #312e38;
+}
+
+.RegisterPage .login-page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RegisterPage .login-page-link img {
+  height: 2rem;
+  width: 2rem;
+
+  margin-right: 2rem;
+  margin-top: 8rem;
+}
+
+.login-page-link a {
+  transition: 400ms;
+}
+
+.login-page-link a:hover {
+  color: orange;
+}
+
+.user-type-container .active {
+  color: orange;
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.8rem;
+}
+
+.RegisterPage .register-messages {
+  position: absolute;
+  top: 25.6rem;
+
+  animation: slideErrorToLeft 1200ms;
+  transition: 400ms;
+}
+
+.RegisterPage .register-messages:hover {
+  color: orange;
+
+  cursor: default;
+}

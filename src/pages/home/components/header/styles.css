@@ -1,0 +1,187 @@
+@keyframes editButtonFadeIn {
+  0% {
+    margin-left: -3rem;
+    opacity: 0;
+  }
+
+  100% {
+    margin-left: 2rem;
+    opacity: 1;
+  }
+}
+
+@keyframes exitButtonFadeIn {
+  0% {
+    margin-top: 5rem;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 8rem;
+    opacity: 1;
+  }
+}
+
+.HomeHeader {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 3.2rem 16.1rem;
+}
+
+.header-main {
+  display: flex;
+
+  gap: 8rem;
+}
+
+.header-main img {
+  height: 8rem;
+  width: 13.8rem;
+}
+
+.userName-initials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  padding: 0.9rem 1.1rem;
+
+  background-color: #3e3b47;
+}
+
+.initials-text {
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem; 
+  color: orange;
+}
+
+.header-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.header-user-info img {
+  height: 5.6rem;
+  width: 5.6rem;
+}
+
+.info-texts {
+  display: flex;
+  flex-direction: column;
+
+  margin: 1.6rem;
+}
+
+.info-texts span {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+
+  margin-bottom: 0.5rem;
+  margin-right: 6rem;
+
+  color: #999591;
+}
+
+.info-texts b {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+
+  color: orange;
+}
+
+.HomeHeader .header-arrow-icon {
+  width: 2rem;
+  margin-left: 2rem;
+
+  transition: 400ms;
+
+  cursor: pointer;
+}
+
+.HomeHeader .header-arrow-icon:hover {
+  transform: rotate(-90deg);
+}
+
+.HomeHeader .header-profile-modal button {
+  animation: editButtonFadeIn 600ms;
+
+  height: 3rem;
+  width: 15rem;
+  border-radius: 1rem;
+
+  margin-left: 2rem;
+
+  background-color: rgb(161, 108, 9);
+  color: white;
+
+  transition: 300ms;
+}
+
+.HomeHeader .header-profile-modal button:hover {
+  background-color: orange;
+  color: black;
+}
+
+.HomeHeader .header-exit-icon {
+  position: relative;
+
+  cursor: pointer;
+
+  width: 2rem;
+
+  transition: 400ms;
+}
+
+.HomeHeader .header-exit-icon:hover {
+  transform: scale(1.4);
+}
+
+.HomeHeader .header-exit-section {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 15rem;
+}
+
+.HomeHeader .header-exit-section button {
+  animation: exitButtonFadeIn 400ms;
+
+  position: absolute;
+
+  height: 3rem;
+  width: 15rem;
+
+  border-radius: 1rem;
+  background-color: rgb(161, 108, 9);
+  color: white;
+
+  transition: 300ms;
+
+  margin-top: 8rem;
+}
+
+.HomeHeader .header-exit-section button:hover {
+  background-color: orange;
+  color: black;
+}
+
+.HomeHeader .profile-left-arrow {
+  width: 5rem;
+
+  margin-top: 2rem;
+
+  cursor: pointer;
+}
