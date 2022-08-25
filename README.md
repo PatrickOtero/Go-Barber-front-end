@@ -1,5 +1,7 @@
 # Go-barber-frontend
 
+#### Link para o repositório de back-end da aplicação: https://github.com/PatrickOtero/Go-Barber-back-end
+
 ### SPA com React.js
 
 #### - TECNOLOGIAS UTILIZADAS:
