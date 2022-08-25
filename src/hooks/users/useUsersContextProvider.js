@@ -67,8 +67,13 @@ const useUsersContextProvider = () => {
     setPassError('')
     setProfileErrors('')
 
-    if (user_password && user_confirmPassword !== user_password)
-      return setPassError('As senhas não conferem')
+    if (user_current_password) {
+      if (!user_confirmPassword || !user_password)
+        return setPassError("Informe a nova senha")
+
+      if (user_confirmPassword !== user_password)
+        return setPassError('As senhas não conferem')
+    }
 
     if (!user_name && !user_email)
       return setProfileErrors('Preencha algum campo')

@@ -33,6 +33,7 @@ const CustomerHome = () => {
     deleteReserveModal,
     setDeleteReserveModal,
     reserveId,
+    setReserveId,
     handleDeleteReserve,
     reserveListAltered,
     setEditingReserve,
@@ -92,7 +93,10 @@ const CustomerHome = () => {
                     handleDeleteReserve(reserveId)
                     setDeleteReserveModal(false);
                     }}type='button'>Sim</button>
-                  <button className="home-button"onClick={() => setDeleteReserveModal(false)}type='button'>Não</button>
+                  <button className="home-button"onClick={() => {
+                    setReserveId("");
+                    setDeleteReserveModal(false)
+                    }}type='button'>Não</button>
                 </div>
             </div>
         </div>

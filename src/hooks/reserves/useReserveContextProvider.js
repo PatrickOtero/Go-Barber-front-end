@@ -60,6 +60,9 @@ const useReserveContextProvider = () => {
   }
 
   const handleCustomerReservesList = async () => {
+    if (reservesList.length === 1) {
+      setReservesList("")
+    }
   
     try {
       await apiAuth.get(
