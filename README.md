@@ -14,3 +14,6 @@
 
       - npm i ou yarn
       - npm start ou yarn start
+      
+      
+### Importante: Teste o app apenas localmente pois o mesmo precisa de ajustes remotamente.
