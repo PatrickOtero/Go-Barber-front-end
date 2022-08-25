@@ -1,5 +1,7 @@
 # Go-barber-frontend
 
+#### Link para o repositório de back-end da aplicação: https://github.com/PatrickOtero/Go-Barber-back-end
+
 ### SPA com React.js
 
 #### - TECNOLOGIAS UTILIZADAS:
@@ -14,3 +16,6 @@
 
       - npm i ou yarn
       - npm start ou yarn start
+      
+      
+### Importante: Teste o app apenas localmente pois o mesmo precisa de ajustes remotamente.
