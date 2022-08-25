@@ -116,8 +116,8 @@ const useReserveContextProvider = () => {
     try {   
       await apiAuth.delete(`/customer/reserves/${reserveId}`).then(response => {
         setReserveMessages(response.data.message)
+        setReserveListAltered(!reserveListAltered);
       })
-      setReserveListAltered(!reserveListAltered);
     } catch (error) {
       setReserveMessages(error.response.data.message)
     }

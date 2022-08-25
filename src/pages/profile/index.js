@@ -4,10 +4,13 @@ import emailIcon from './assets/emailIcon.svg'
 import nameIcon from './assets/nameIcon.svg'
 import passIcon from './assets/passIcon.svg'
 import useLoginContext from '../../hooks/loggedUser/useLoginContext'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import useUsersContext from '../../hooks/users/useUsersContext'
+import ExclusionModal from './components/exclusionModal'
 
 const ProfilePage = () => {
+  const [exclusionModal, setExclusionModal] = useState(false);
+
   const { userData, userType, setUserData, loginUserNameInitialsObtainer, setUserNameInitials, userNameInitials } = useLoginContext()
   const {
     handleUserEdit,
@@ -50,6 +53,7 @@ const ProfilePage = () => {
       </header>
       <div className="profile-container">
         <main>
+          { exclusionModal && <ExclusionModal userType={userType} setExclusionModal={setExclusionModal}/>}
         <div className='userName-initials-profile'>
           <b className='initials-text-profile'>{userNameInitials}</b>
         </div>
@@ -108,12 +112,23 @@ const ProfilePage = () => {
               </div>
               {passError && <h1 className="profile-errors">{passError}</h1>}
             </div>
-            <button
-              type="button"
-              onClick={() => handleUserEdit( userType, setUserData)}
-            >
-              Confirmar mundanças
-            </button>
+            <div className='profile-buttons'>
+              <button
+                type="button"
+                onClick={() => handleUserEdit( userType, setUserData)}
+              >
+                Confirmar mundanças
+              </button>
+              <button className='profile-button-delete'
+                type="button"
+                onClick={() => {
+                  setProfileErrors("")
+                  setExclusionModal(true)
+                }}
+              >
+                Excluir minha conta
+              </button>
+              </div>
           </form>
         </main>
       </div>

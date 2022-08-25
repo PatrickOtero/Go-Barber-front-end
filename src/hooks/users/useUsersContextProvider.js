@@ -19,6 +19,9 @@ const useUsersContextProvider = () => {
   const [linkSent, setLinkSent] = useState(false);
   const [successfullyRedefined, setSuccessfullyRedefined] = useState(false);
 
+  const [modalUserPassword, setModalUserPassword] = useState("");
+  const [userDeleted, setUserDeleted] = useState(false);
+
   const handleUserRegistration = async (userType) => {
     setRegisterMessages('')
 
@@ -49,6 +52,9 @@ const useUsersContextProvider = () => {
         `/${userType}/register`, body
       ).then(finalResponse => {
           setRegisterMessages(finalResponse.data.message)
+          setRegister_name("")
+          setRegister_email("")
+          setRegister_password("")
         })
                 
         setRegister_password('')
@@ -84,6 +90,28 @@ const useUsersContextProvider = () => {
       setUser_confirmPassword('')
 
       changeUserName({ user_name, user_email })
+    } catch (error) {
+      setProfileErrors(error.response.data.message)
+    }
+  }
+
+  const handleUserDelete = async(userType) => {
+    setProfileErrors("");
+
+    if (!modalUserPassword.length) {
+      setProfileErrors("É obrigatório informar sua senha")
+      return;
+    }
+
+    try {
+      await apiAuth.delete(`/${userType}/delete/${modalUserPassword}`).then(finalResponse => {
+          setProfileErrors(finalResponse.data.message)
+
+          console.log(finalResponse)
+          setUserDeleted(true);
+          setModalUserPassword("")
+      })
+
     } catch (error) {
       setProfileErrors(error.response.data.message)
     }
@@ -169,6 +197,11 @@ const useUsersContextProvider = () => {
     setLinkSent,
     successfullyRedefined,
     setSuccessfullyRedefined,
+    handleUserDelete,
+    modalUserPassword,
+    setModalUserPassword,
+    userDeleted,
+    setUserDeleted
   }
 }
 

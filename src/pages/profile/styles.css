@@ -37,7 +37,7 @@
 }
 
 .userName-initials-profile {
-  margin-top: -45rem;
+  margin-top: -37rem;
   margin-bottom: 20rem;
 
   width: 20rem;
@@ -69,6 +69,8 @@
 
   animation: errorSlideToRight 800ms;
   transition: 400ms;
+
+  z-index: 3;
 }
 
 .ProfilePage .profile-errors:hover {
@@ -134,6 +136,11 @@ form h1 {
   margin-bottom: 2.4rem;
 }
 
+.profile-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 form button {
   height: 5rem;
   width: 34rem;
@@ -146,6 +153,20 @@ form button {
   background-color: rgb(163, 113, 21);
 
   margin-top: 2.4rem;
+}
+
+.profile-button-delete {
+  background-color: black;
+  
+}
+
+.profile-button-delete:hover {
+  background-color: red;
+
+  color: black;
+
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 form button:hover {

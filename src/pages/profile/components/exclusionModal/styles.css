@@ -1,0 +1,109 @@
+.exclusion-modal-container {
+    position: absolute;
+
+    top: -14rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.801);
+
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 4rem;
+
+    background-color: #28262e;;
+
+    width: 60rem;
+    height: 39rem;
+
+    border-radius: 3rem;
+
+    gap: 3rem;
+
+    animation: customerHomeSlideToRight 600ms
+}
+
+.exclusion-password-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4rem;
+}
+
+.exclusion-password-container input {
+    height: 5rem;
+
+    background-color: rgba(201, 30, 30, 0.418);
+    
+    font-weight: 900;
+    font-size: 2rem;
+
+    padding: 2rem;
+}
+
+.exclusion-main-text {
+    font-size: 3rem;
+    color: white;
+}
+
+.exclusion-smaller-text {
+    font-size: 2rem;
+
+    color: orange;
+}
+
+.exclusion-buttons-container {
+    display: flex;
+
+    gap: 4rem;
+}
+
+.exclusion-button {
+    height: 5.6rem;
+    width: 20rem;
+    border-radius: 1rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #232129;
+  
+    color: white;
+  
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+  
+    font-family: 'Roboto Slab', sans-serif;
+  
+    transition: 400ms;
+  }
+
+  .exclusion-button:hover {
+    background-color: orange;
+    color: #312e38;
+  }
+
+  .exclusion-confirm {
+    background-color: black;
+  }
+
+  .exclusion-confirm:hover {
+    background-color: rgb(192, 28, 28);
+
+    font-weight: 900;
+    font-size: 1.8rem;
+
+    color: black;
+  }

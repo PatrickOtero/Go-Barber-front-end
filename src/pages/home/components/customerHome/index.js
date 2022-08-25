@@ -131,8 +131,10 @@ const CustomerHome = () => {
               </div>
             </div>
             <button className='home-button' onClick={() => {
+              setReserveMessages("")
+              setReserveSuccessMessage("");
               setEditingReserve(false);
-              setBarberSelected(false)
+              setBarberSelected(false);
               }} type='button'>Retornar</button>
             </section>
             <section className='appointment-hour-section'>

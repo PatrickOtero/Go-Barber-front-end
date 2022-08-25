@@ -15,6 +15,7 @@ const LoginPage = () => {
     user_email,
     setUser_password,
     user_password,
+    setUserDeleted
   } = useUsersContext()
 
   const { handleUserLogin, loginError, setLoginError, token } = useLoginContext()
@@ -30,6 +31,7 @@ const LoginPage = () => {
   useEffect(() => {
     setLoginError("");
     setUser_password("");
+    setUserDeleted(false);
   }, [])
 
   const handleLoginByKeyPressed = event => {
