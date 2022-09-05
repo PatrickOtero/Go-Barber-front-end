@@ -1,14 +1,14 @@
 import axios from "axios"
 
-const localUrl = "http://localhost:3001"
-// const serverUrl = "https://patrick-gobarber-backend.herokuapp.com"
+// const localUrl = "http://localhost:3001"
+const serverUrl = "https://go-barber-back-end-production.up.railway.app"
 
 export const api = axios.create({ 
-    baseURL: localUrl,
+    baseURL: serverUrl,
 });
 
 export const apiAuth = axios.create({
-    baseURL: localUrl,
+    baseURL: serverUrl,
 })
 
 apiAuth.interceptors.request.use((config) => {
