@@ -28,3 +28,4 @@
 ### Importante: Teste o app apenas localmente pois o mesmo precisa de ajustes remotamente.
 
 #### Se quiser ver online, tenha em mente que a listagem de agendamentos não está funcionando e eu ainda não descobri por quê, já que ela funciona localmente (você mesmo pode comprovar). Link: https://patrickotero-gobarber.netlify.app/
+     OBS: O sistema deste app está hospedado em um serviço gratuíto que limita o tempo em que ele pode ficar online, portanto, o aplicativo pode não funcionar quando testar, se for esse o seu caso, terá que esperar para testar até o início do próximo mês.
