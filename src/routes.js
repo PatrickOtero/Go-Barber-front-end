@@ -9,7 +9,7 @@ import { UsersContextProvider } from './contexts/users'
 import { BarberContextProvider } from './pages/home/contexts/barber'
 import AppointmentSuccessPage from './pages/appointmentSuccess'
 import RecoverPass from './pages/login/components/passRecover/passRecover'
-import NewPass from './pages/login/components/newPass/newPass'
+import NewPass from './pages/login/components/newPass'
 import { ReserveContextProvider } from './contexts/reserves'
 
 function App() {
