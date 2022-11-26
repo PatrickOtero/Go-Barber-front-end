@@ -16,7 +16,7 @@ const BarberHome = () => {
   const [day] = useState(new Date().getDay())
   const [calendarCurrentDate, setCalendarCurrentDate] = useState()
   const [cancelModal, setCancelModal] = useState(false);
-  const [cancelReason, setCancelReason] = useState("");
+  const [cancelreason, setCancelreason] = useState("");
   const [cancelMessages, setCancelMessages] = useState("");
   const [appointmentId, setAppointmentId] = useState(0);
   const [reasonModal, setReasonModal] = useState(false);
@@ -51,7 +51,7 @@ const BarberHome = () => {
     setCancelMessages("");
 
     const body = {
-        cancelReason
+        cancelreason
     }
 
     try {
@@ -133,7 +133,7 @@ const BarberHome = () => {
                       </span>
                     </div>
                     <div className="attendance-main secondary">
-                      {appointmentId === attendance.id && cancelModal && <CancelModal cancelReason={cancelReason} setCancelReason={setCancelReason}/>}
+                      {appointmentId === attendance.id && cancelModal && <CancelModal cancelreason={cancelreason} setCancelreason={setCancelreason}/>}
                     {attendance.canceled && <CancelDiv type="smaller-div" messageSize="smaller-message" setReasonModal={setReasonModal}/>}
                     {!attendance.canceled && new Date(attendance.reserve_date) < new Date() && <AttendedDiv type="smaller-div" messageSize="smaller-message"/>}
                       <img src={userIcon} alt="foto do cliente" />
@@ -177,7 +177,7 @@ const BarberHome = () => {
                       </span>
                     </div>
                     <div className="attendance-main secondary">
-                        {appointmentId === attendance.id && cancelModal && <CancelModal cancelReason={cancelReason} setCancelReason={setCancelReason}/>}
+                        {appointmentId === attendance.id && cancelModal && <CancelModal cancelreason={cancelreason} setCancelreason={setCancelreason}/>}
                        {attendance.canceled && <CancelDiv type="smaller-div" messageSize="smaller-message" setReasonModal={setReasonModal}/>}
                        {!attendance.canceled && new Date(attendance.reserve_date) < new Date() && <AttendedDiv type="smaller-div" messageSize="smaller-message"/>}
                       <img src={userIcon} alt="foto do cliente" />
@@ -223,7 +223,7 @@ const BarberHome = () => {
                     <div onClick={() => {
                       setAppointmentId(attendance.id);
                     }} className="attendance-main secondary">
-                       {appointmentId === attendance.id && cancelModal && <CancelModal cancelReason={cancelReason} setCancelReason={setCancelReason}/>}
+                       {appointmentId === attendance.id && cancelModal && <CancelModal cancelreason={cancelreason} setCancelreason={setCancelreason}/>}
                       {attendance.canceled && <CancelDiv type="smaller-div" messageSize="smaller-message" setReasonModal={setReasonModal}/>}
                       {!attendance.canceled && new Date(attendance.reserve_date) < new Date() && <AttendedDiv type="smaller-div" messageSize="smaller-message"/>}
                       <img src={userIcon} alt="foto do cliente" />
