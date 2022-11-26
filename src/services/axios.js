@@ -1,7 +1,7 @@
 import axios from "axios"
 
 // const localUrl = "http://localhost:3001"
-const serverUrl = "https://go-barber-back-end-production.up.railway.app"
+const serverUrl = "https://go-barber-api-patrick-otero.onrender.com"
 
 export const api = axios.create({ 
     baseURL: serverUrl,
