@@ -32,33 +32,42 @@
      OBS: O sistema deste app está hospedado em um serviço gratuíto que limita o tempo em que ele pode ficar online, portanto, o aplicativo pode não funcionar quando testar, se for esse o seu caso, terá que esperar para testar até o início do próximo mês ou poderá me procurar através de qualquer contato disponibilizado para que eu tente resolver o problema
 
 ## Tela de login
-<img src="">
+<img src="./mdAssets/goBarberLogin.jpg">
 
 ## Tela de cadastro
-<img src="">
+<img src="./mdAssets/goBarberCadastro.jpg">
 
 ## Tela home do cabeleireiro
-<img src="">
+<img src="./mdAssets/goBarberHomeCabeleireiroo.jpg">
 
 ## Tela de edição do perfil do cabeleireiro e do cliente
-<img src="">
+<img src="./mdAssets/goBarberTelaEdicaoUsuario.jpg">
 
 ## Tela home do cliente
-<img src="">
+<img src="./mdAssets/goBarberClienteHome.jpg">
 
 ## Tela de agendamento
-<img src="">
+<img src="./mdAssets/goBarberTelaDeAgendamento.jpg">
 
 ## Tela de sucesso de agendamento
-<img src="">
+<img src="./mdAssets/goBarberTelaSucessoAgendamento.jpg">
 
 ## Modal de exclusão de perfil
-<img src="">
+<img src="./mdAssets/goBarberModalExclusao.jpg">
 
 ## Modal de exclusão de agendamento
-<img src="">
+<img src="./mdAssets/goBarberModalExclusaoAgendamento.jpg">
 
 ## Modal de visualização de motivo de cancelamento de agendamento
-<img src="">
+<img src="./mdAssets/goBarberModalMotivoCancelamento.jpg">
+
+## Tela de recuperação de senha
+<img src="./mdAssets/goBarberTelaEsqueciSenha.jpg">
+
+## Email com o link para redefinição de senha
+<img src="./mdAssets/goBarberEmailDeRedefinicaoDeSenha.jpg">
+
+## Tela de redefinição de senha
+<img src="./mdAssets/goBarberRedefinePass.jpg">
 
 ### Muito obrigado pela boa vontade.
