@@ -5,7 +5,7 @@ const CancelModal = ({ cancelreason, setCancelreason}) => {
     return (
         <div className="cancel-modal-container">
               <div className='cancel-reserve-modal'>
-                    <textarea placeholder="Informe seu motivo." value={cancelReason} onChange={(e) => setCancelreason(e.target.value)}/>
+                    <textarea placeholder="Informe seu motivo." value={cancelreason} onChange={(e) => setCancelreason(e.target.value)}/>
             </div>
         </div>
     )
