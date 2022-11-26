@@ -8,7 +8,7 @@ import ReasonModal from './reasonModal'
 
 const AppointmentList = ({ setBarberSelected, setBarberName, barberName, setEditingReserve }) => {
   const [reasonModal, setReasonModal] = useState(false);
-  const [cancelReason, setCancelReason] = useState("");
+  const [cancelreason, setCancelreason] = useState("");
 
   const {
     setReservesList,
