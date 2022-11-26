@@ -1,7 +1,7 @@
 import useReserveContext from "../../../../../../../hooks/reserves/useReserveContext";
 import "./styles.css";
 
-const ReasonModal = ({setReasonModal, cancelReason, barberName}) => {
+const ReasonModal = ({setReasonModal, cancelreason, barberName}) => {
 
     const {
         handleDeleteReserve,
@@ -13,7 +13,7 @@ const ReasonModal = ({setReasonModal, cancelReason, barberName}) => {
               <div className='reason-reserve-modal'>
                 <b className="reasonTitle">{barberName}:</b>
                 <div className="reason-container">
-                    <b className="reasonContent">{cancelReason}</b>
+                    <b className="reasonContent">{cancelreason}</b>
                 </div>
                 <div className="reason-buttons-container">
                   <button className="reason-modal-button" onClick={() => {

@@ -31,7 +31,7 @@ const AppointmentList = ({ setBarberSelected, setBarberName, barberName, setEdit
 
   return (
     <div className="AppointmentList">
-      {reasonModal && <ReasonModal setReasonModal={setReasonModal} cancelReason={cancelReason} barberName={barberName} reserveId={reserveId}/>}
+      {reasonModal && <ReasonModal setReasonModal={setReasonModal} cancelreason={cancelreason} barberName={barberName} reserveId={reserveId}/>}
         {!reservesList.length && <h2 className='customer-reserveList-empty'>Você ainda não agendou nenhum corte</h2>}
       {reservesList.length > 0 &&
         !reservesError &&
@@ -43,7 +43,7 @@ const AppointmentList = ({ setBarberSelected, setBarberName, barberName, setEdit
           >
                 <div className="reserve-and-button-container">
                     <div className="reserve-list-main">
-                    {reserve.canceled && <CancelDiv type="smallest-div" messageSize="smallest-message" userType="customer" setReasonModal={setReasonModal} setCancelReason={setCancelReason} cancelReason={reserve.cancelReason} barberName={reserve.barber_name} setBarberName={setBarberName} reserveId={reserve.id} setReserveId={setReserveId}/>}
+                    {reserve.canceled && <CancelDiv type="smallest-div" messageSize="smallest-message" userType="customer" setReasonModal={setReasonModal} setCancelreason={setCancelreason} cancelreason={reserve.cancelreason} barberName={reserve.barber_name} setBarberName={setBarberName} reserveId={reserve.id} setReserveId={setReserveId}/>}
                         <div className="reserve-list-border"></div>
                     <img src={userIcon} alt="foto do cliente" />
                         <div className="reserve-list-info">
