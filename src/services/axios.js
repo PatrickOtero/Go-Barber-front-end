@@ -1,14 +1,14 @@
 import axios from "axios"
 
-const localUrl = "http://localhost:3001"
-// const serverUrl = "https://go-barber-api-patrick-otero.onrender.com"
+// const localUrl = "http://localhost:3001"
+const serverUrl = "https://go-barber-api-patrick-otero.onrender.com"
 
 export const api = axios.create({ 
-    baseURL: localUrl,
+    baseURL: serverUrl,
 });
 
 export const apiAuth = axios.create({
-    baseURL: localUrl,
+    baseURL: serverUrl,
 })
 
 apiAuth.interceptors.request.use((config) => {
