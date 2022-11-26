@@ -12,6 +12,8 @@
   - React-use
   - Axios
   - React-day-picker
+
+### Link para testar online: https://patrickotero-gobarber.netlify.app/
   
 #### - PASSOS NECESSÁRIOS PARA O FUNCIONAMENTO DO APP LOCALMENTE NO SEU SISTEMA:
 
@@ -26,8 +28,6 @@
       
       
 ### Importante: Você precisará baixar também o backend desta aplicação para que ela funcione localmente.
-
-#### Link para testar online: https://patrickotero-gobarber.netlify.app/
 
      OBS: O sistema deste app está hospedado em um serviço gratuíto que limita o tempo em que ele pode ficar online, portanto, o aplicativo pode não funcionar quando testar, se for esse o seu caso, terá que esperar para testar até o início do próximo mês ou poderá me procurar através de qualquer contato disponibilizado para que eu tente resolver o problema
 
